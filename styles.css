@@ -73,7 +73,7 @@ td {
   border-radius: 8%;
   border: none;
   background-color: #2775bb;
-  text-shadow: -2px 2px 0 #174369;
+  text-shadow: -2px 1px 0 #17436986;
   box-shadow: -2px 2px 1px #1a578b;
   color: white;
   font-weight: bold;
@@ -87,7 +87,7 @@ td {
 
   font-size: 1.4rem;
   color: #fcca07;
-  text-shadow: -2px 2px 0 #997a00;
+  text-shadow: -2px 1px 0 #997a00;
   padding-bottom: 1.5rem;
 }
 #pokemon-name,
@@ -153,6 +153,5 @@ td {
   }
   body {
     justify-content: center;
-    height: 90%;
   }
 }
