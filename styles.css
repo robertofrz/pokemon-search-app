@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+body {
+  background-color: #f93d32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main {
+  width: 23rem;
+  height: 35rem;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  border-radius: 4%;
+}
+#logo {
+  width: 16rem;
+  margin-bottom: -1.2rem;
+}
+#title {
+  font-family: "Bangers", serif;
+  font-size: 1.3rem;
+  color: #fcca07;
+  text-shadow: -2px -2px 0 #3a63a5, 2px -2px 0 #3a63a5, -2px 2px 0 #3a63a5,
+    2px 2px 0 #3a63a5, 0px 0px 10px rgba(252, 202, 7, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.pokemon-container {
+  background-color: #e6e6e6;
+  margin: 0.5rem;
+  border-radius: 2%;
+}
+#stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 97%;
+  color: white;
+  text-align: center;
+  border-spacing: 0.15rem; /* Remove espaço entre células */
+  border-radius: 4%;
+  overflow: hidden;
+}
+th {
+  color: #fcca07;
+  background-color: #3a63a5;
+  font-size: 0.9rem;
+}
+td {
+  background-color: #3a63a5;
+}
+#search-input {
+  height: 1.6rem;
+  border-radius: 4%;
+  border: 0.15rem solid #3a63a5;
+  margin-top: 0.4rem;
+}
+#search-input:focus {
+  outline: none;
+}
+#search-button {
+  height: 2rem;
+  border-radius: 6%;
+  border: none;
+  background-color: #3a63a5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#input-container {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-family: "Bangers", serif;
+  font-size: 1.5rem;
+  color: #fcca07;
+  text-shadow: -0.1rem -0.1rem 0 #3a63a5, 0.1rem -0.1rem 0 #3a63a5,
+    -0.1rem 0.1rem 0 #3a63a5, 0.1rem 0.1rem 0 #3a63a5;
+  padding-bottom: 1.5rem;
+}
+#pokemon-name,
+#pokemon-id {
+  color: #3a63a5;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#weight,
+#height {
+  color: #3a63a5;
+  font-size: 0.8rem;
+}
+.info {
+  margin: 0.5rem 0 -0.7rem 0.5rem;
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.type {
+  width: 5rem;
+  height: 1.3rem;
+  background-color: #3a63a5;
+  color: #fcca07;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+#types {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0;
+}
+#sprite {
+  text-align: center;
+  width: 40%;
+  display: none;
+}
+
+#sprite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#subtitle {
+  margin-right: 1.5rem;
+}
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+  }
+  body {
+    justify-content: center;
+  }
+}
