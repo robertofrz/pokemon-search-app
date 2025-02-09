@@ -76,13 +76,14 @@ function displayData(data) {
   specialDefense.innerHTML = data.stats[4].base_stat;
   speed.innerHTML = data.stats[5].base_stat;
 
-  sprite.addEventListener("mouseenter", () => {
-    sprite.src = "";
-    sprite.src = data.sprites.back_default;
-  });
+  const newSprite = sprite.cloneNode(true);
+  sprite.parentNode.replaceChild(newSprite, sprite);
 
-  sprite.addEventListener("mouseleave", () => {
-    sprite.src = data.sprites.front_default;
+  newSprite.addEventListener("click", () => {
+    newSprite.src =
+      newSprite.src === data.sprites.front_default
+        ? data.sprites.back_default
+        : data.sprites.front_default;
   });
 
   if (data.types.length === 1) {

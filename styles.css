@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 
 body {
   background-color: #f93d32;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Francois One", serif;
 }
 #main {
   width: 23rem;
@@ -16,14 +18,12 @@ body {
 }
 #logo {
   width: 16rem;
-  margin-bottom: -1.2rem;
+  margin-bottom: -1.6rem;
 }
 #title {
-  font-family: "Bangers", serif;
   font-size: 1.3rem;
   color: #fcca07;
-  text-shadow: -2px -2px 0 #3a63a5, 2px -2px 0 #3a63a5, -2px 2px 0 #3a63a5,
-    2px 2px 0 #3a63a5, 0px 0px 10px rgba(252, 202, 7, 0.8);
+  text-shadow: -2px 2px 0 #997a00;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -45,53 +45,61 @@ table {
   border-spacing: 0.15rem; /* Remove espaço entre células */
   border-radius: 4%;
   overflow: hidden;
+  text-shadow: -2px 2px 0 #174369;
 }
 th {
   color: #fcca07;
-  background-color: #3a63a5;
+  background-color: #2775bb;
   font-size: 0.9rem;
 }
 td {
-  background-color: #3a63a5;
+  background-color: #2775bb;
 }
 #search-input {
   height: 1.6rem;
   border-radius: 4%;
-  border: 0.15rem solid #3a63a5;
+  border: 0.15rem solid #2775bb;
   margin-top: 0.4rem;
+}
+#search-input::placeholder {
+  font-family: "Francois One", serif;
+  color: rgb(185, 185, 185);
 }
 #search-input:focus {
   outline: none;
 }
 #search-button {
   height: 2rem;
-  border-radius: 6%;
+  border-radius: 8%;
   border: none;
-  background-color: #3a63a5;
+  background-color: #2775bb;
+  text-shadow: -2px 2px 0 #174369;
+  box-shadow: -2px 2px 1px #1a578b;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Francois One", serif;
+  font-size: 0.9rem;
 }
 #input-container {
   text-align: center;
   padding-top: 1.5rem;
-  font-family: "Bangers", serif;
-  font-size: 1.5rem;
+
+  font-size: 1.4rem;
   color: #fcca07;
-  text-shadow: -0.1rem -0.1rem 0 #3a63a5, 0.1rem -0.1rem 0 #3a63a5,
-    -0.1rem 0.1rem 0 #3a63a5, 0.1rem 0.1rem 0 #3a63a5;
+  text-shadow: -2px 2px 0 #997a00;
   padding-bottom: 1.5rem;
 }
 #pokemon-name,
 #pokemon-id {
-  color: #3a63a5;
-  font-weight: bold;
+  color: #2775bb;
+
   font-size: 1.1rem;
 }
 #weight,
 #height {
-  color: #3a63a5;
-  font-size: 0.8rem;
+  color: #2775bb;
+  font-size: 0.9rem;
 }
 .info {
   margin: 0.5rem 0 -0.7rem 0.5rem;
@@ -103,8 +111,8 @@ td {
 }
 .type {
   width: 5rem;
-  height: 1.3rem;
-  background-color: #3a63a5;
+  height: 1.4rem;
+  background-color: #2775bb;
   color: #fcca07;
   display: flex;
   justify-content: center;
@@ -113,6 +121,7 @@ td {
   font-size: 0.8rem;
   font-weight: bold;
   margin: 0;
+  text-shadow: -2px 2px 0 #174369;
 }
 #types {
   display: flex;
@@ -123,6 +132,7 @@ td {
   text-align: center;
   width: 40%;
   display: none;
+  cursor: pointer;
 }
 
 #sprite-container {
@@ -143,5 +153,6 @@ td {
   }
   body {
     justify-content: center;
+    height: 90%;
   }
 }
